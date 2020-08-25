@@ -42,7 +42,8 @@ The dataset was taken from kaggle . [Click here](https://www.kaggle.com/meowmeow
   - Training model on train set images
       
 **Testing**
-      - Tesing on test images
+   
+  - Tesing on test images
       
       
 ## 1. Data collection:
