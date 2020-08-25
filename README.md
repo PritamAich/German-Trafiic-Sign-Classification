@@ -51,8 +51,9 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
       
 ## 2. Visualization:
 
-      1. Data Visualization on some of the sample images from test dataset using 'matplotlib' to get a grasp of the images we are dealing with. Some of those images are shown            below.
-      2. Extracted dimensions of each image from training set and plotted them on a jointplot using 'seaborn'
+      1. Data Visualization on some of the sample images from test dataset using 'matplotlib' to get a grasp of the images we are dealing with. 
+         Some of those images are shown below.
+      2. Extracted dimensions of each image from training set and plotted them on a jointplot using 'seaborn'.
       
 ## 3. Data Preprocessing:
 
@@ -68,7 +69,8 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
 ## 4. Model creation:
       
       1. Loaded the training images and labels saved as numpy files.
-      2. Used train_test_split module from sklearn package to solit the training data into train and validation sets. The split ratio was 80% training and 20% validation data.
+      2. Used train_test_split module from sklearn package to solit the training data into train and validation sets. 
+         The split ratio was 80% training and 20% validation data.
       3. Categorized the labels of both train and validation set using one one-hot encoding technique. 
          Used 'to_categorical' method from keras package.
       4. Created a CNN model with 3 layers, used MaxPool2D for pooling layers(pooling size = (2,2)) and dropout layers with a dropout rate of 0.5 for each layer.
@@ -85,6 +87,8 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
 ## 5. Testing on test images:
       
       1. Loaded our CNN model.
-      2. Imported the test images, normalized them by scaling. For this, implemented a function that will take image folder path as an argument and then resize and scale the              images for the model. This function can be later used for any future testing purpose.
+      2. Imported the test images, normalized them by scaling. 
+         For this, implemented a function that will take image folder path as an argument and then resize and scale the images for the model. 
+         This function can be later used for any future testing purpose.
       3. Tested these images on our model and predicted their classes.
       4. Achieved an overall accuarcy of 97% on the test images which is quite good.
