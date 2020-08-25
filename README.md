@@ -86,32 +86,32 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
       - Metrics = 'accuracy'
   7. Trained the model with epochs = 15, used early stopping to prevent overfitting.
           
-        model = Sequential()
+          model = Sequential()
 
-        #1st layer
-        model.add(Conv2D(filters = 64, kernel_size = (3,3), input_shape = x_train.shape[1:], activation = 'relu', padding = 'same'))
-        model.add(MaxPool2D(pool_size=(2,2)))
-        model.add(Dropout(0.5))
+          #1st layer
+          model.add(Conv2D(filters = 64, kernel_size = (3,3), input_shape = x_train.shape[1:], activation = 'relu', padding = 'same'))
+          model.add(MaxPool2D(pool_size=(2,2)))
+          model.add(Dropout(0.5))
 
-        #2nd layer
-        model.add(Conv2D(filters = 64, kernel_size = (3,3), activation = 'relu'))
-        model.add(MaxPool2D(pool_size=(2,2)))
-        model.add(Dropout(0.5))
+          #2nd layer
+          model.add(Conv2D(filters = 64, kernel_size = (3,3), activation = 'relu'))
+          model.add(MaxPool2D(pool_size=(2,2)))
+          model.add(Dropout(0.5))
 
-        #3rd layer
-        model.add(Conv2D(filters = 64, kernel_size = (3,3), activation = 'relu'))
-        model.add(MaxPool2D(pool_size=(2,2)))
-        model.add(Dropout(0.5))
+          #3rd layer
+          model.add(Conv2D(filters = 64, kernel_size = (3,3), activation = 'relu'))
+          model.add(MaxPool2D(pool_size=(2,2)))
+          model.add(Dropout(0.5))
 
-        model.add(Flatten())
+          model.add(Flatten())
 
-        #Dense layer
-        model.add(Dense(128, activation = 'relu'))
-        model.add(Dropout(0.5))
+          #Dense layer
+          model.add(Dense(128, activation = 'relu'))
+          model.add(Dropout(0.5))
 
-        #Output layer
-        model.add(Dense(43, activation = 'softmax'))
-        
+          #Output layer
+          model.add(Dense(43, activation = 'softmax'))
+
   8. Achieved an accuracy of 99.4% on the validation set.
   9. Lastly saved the model in 'h5' format.
 
