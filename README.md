@@ -122,4 +122,55 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
      For this, implemented a function that will take image folder path as an argument and then resize and scale the images for the model. 
      This function can be later used for any future testing purpose.
   3. Tested these images on our model and predicted their classes.
+  
+                  precision    recall  f1-score   support
+
+                     0       0.97      1.00      0.98        60
+                     1       0.98      0.99      0.99       720
+                     2       0.98      0.99      0.99       750
+                     3       1.00      0.94      0.97       450
+                     4       1.00      0.98      0.99       660
+                     5       0.95      0.98      0.96       630
+                     6       1.00      0.88      0.94       150
+                     7       0.99      0.97      0.98       450
+                     8       0.98      0.98      0.98       450
+                     9       0.96      1.00      0.98       480
+                    10       1.00      1.00      1.00       660
+                    11       0.91      0.99      0.95       420
+                    12       0.99      0.95      0.97       690
+                    13       1.00      1.00      1.00       720
+                    14       1.00      1.00      1.00       270
+                    15       0.97      1.00      0.98       210
+                    16       1.00      0.99      1.00       150
+                    17       1.00      0.90      0.95       360
+                    18       0.94      0.95      0.94       390
+                    19       0.95      1.00      0.98        60
+                    20       0.79      1.00      0.88        90
+                    21       0.96      0.73      0.83        90
+                    22       0.99      0.99      0.99       120
+                    23       0.93      0.98      0.95       150
+                    24       0.99      0.93      0.96        90
+                    25       0.98      0.98      0.98       480
+                    26       0.94      0.93      0.94       180
+                    27       0.86      0.50      0.63        60
+                    28       0.97      0.98      0.97       150
+                    29       0.89      1.00      0.94        90
+                    30       0.98      0.71      0.83       150
+                    31       0.94      0.96      0.95       270
+                    32       0.62      1.00      0.77        60
+                    33       0.99      1.00      0.99       210
+                    34       1.00      0.99      1.00       120
+                    35       0.99      1.00      1.00       390
+                    36       0.98      1.00      0.99       120
+                    37       0.95      1.00      0.98        60
+                    38       0.97      1.00      0.98       690
+                    39       0.97      0.98      0.97        90
+                    40       0.88      0.97      0.92        90
+                    41       1.00      0.72      0.83        60
+                    42       0.93      1.00      0.96        90
+
+              accuracy                           0.97     12630
+             macro avg       0.95      0.95      0.95     12630
+          weighted avg       0.97      0.97      0.97     12630
+
   4. Achieved an overall accuarcy of 97% on the test images which is quite good.
