@@ -26,20 +26,20 @@ The dataset was taken from kaggle . [Click here](https://www.kaggle.com/meowmeow
 
 **Visualization**
 
-      - Sample images
-      - Joint plots
+  - Sample images
+  - Joint plots
       
 **Data Preprocessing**
 
-      - Resizing images
-      - Converting images into numpy array
-      - Rescaling Images
+  - Resizing images
+  - Converting images into numpy array
+  - Rescaling Images
       
 **Model Building**
 
-      - Data Spliting
-      - CNN model creation
-      - Training model on train set images
+  - Data Spliting
+  - CNN model creation
+  - Training model on train set images
       
 **Testing**
       - Tesing on test images
