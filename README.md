@@ -57,7 +57,10 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
 
   1. Data Visualization on some of the sample images from test dataset using 'matplotlib' to get a grasp of the images we are dealing with. 
      Some of those images are shown below.
+     ![](images/t1.png)
   2. Extracted dimensions of each image from training set and plotted them on a jointplot using 'seaborn'.
+     ![](images/jointplot.png)
+  
       
       
 ## 3. Data Preprocessing:
@@ -67,6 +70,7 @@ Download the dataset from [here](https://www.kaggle.com/meowmeowmeowmeowmeow/gts
   3. Scaled the images so that the pixel values of each image remain between 0 and 1. This is also known as normalization.
      **Normalization is a process that changes the range of pixel intensity values.**
   4. And lastly used countplot from seaborn to count the number of images in each distinct class.
+     ![](images.distribution.png)
   5. Saved the scaled images data and labels for future use in the model.
       
 #### Note: The 'Training.npy' file saved during during this process was around 2.2gb size which was not possible to upload in github. Run the notebook file and it will automatically save that file in local.
